@@ -15,6 +15,12 @@
 
 Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
+The aim of this project was to examine the provided website code, CSS stylesheet, and assets for bugs, and make improvements to enhance the accessibility and layout of the Horiseon website.
+
+General improvements have been made in the HTML file so that all hyperlinks work, images contain 'alt' attributes and descriptions. Improvements have been made to the CSS stylesheet so that selectors have been consolidated to reduce redundant code. 
+
+Some styling attributes were added to the CSS code for page resizing purposes, before it was understood that topic hadn't been covered yet and those improvements were not required. Based on skills learned in that topic, in future this would have made use of flexboxes and media enquiries.
+
 ## 2. Installation
 
 The HTML code and CSS styling can be accessed by installing a code editor such as Visual Code Studio. The website is deployed over GitHub and can be viewed in a web browser.
