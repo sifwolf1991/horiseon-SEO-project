@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
 }
 
 body {
@@ -27,6 +27,9 @@ body {
 .header div {
     padding-top: 15px;
     margin-right: 20px;
+
+    /*added position below 'relative' to ensure heading text remains inside the blue header bar when the page is resized*/
+    position: relative
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -78,6 +81,7 @@ p {
 .benefits {
     margin-right: 20px;
     padding: 20px;
+    display: relative
     clear: both;
     float: right;
     width: 20%;
@@ -86,76 +90,61 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/*consolidated selectors 'benefit-lead, benefit-brand, and benefit-cost into one selector called 'benefit-item'*/
+.benefit-item {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/*consolidated selectors 'benefit-lead h3, benefit-brand h3, and benefit-cost h3 into one selector called 'benefit-item h3'*/
+.benefit-item h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+/*consolidated selectors 'benefit-lead img, benefit-brand img, and benefit-cost img into one selector called 'benefit-item img'*/
+.benefit-item img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
 .search-engine-optimization {
+    /*added height 50%, added width: 100%, added overflow: auto to ensure text and image don't run outside the div container when the window is resized/minimized*/
+    height: 50%;
+    width: 100%;
+overflow: auto;
+
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+/*removed height: 200px so image and text scale down to fit div container when the window is resized*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
 .online-reputation-management {
+        /*added height 50%, added width: 100%, added overflow: auto to ensure text and image don't run outside the div container when the window is resized/minimized*/
+        height: 50%;
+        width: 100%;
+    overflow: auto;
+
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /*removed height: 200px so image and text scale down to fit div container when the window is resized*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
 .social-media-marketing {
+        /*added height 50%, added width: 100%, added overflow: auto to ensure text and image don't run outside the div container when the window is resized/minimized*/
+        height: 50%;
+        width: 100%;
+    overflow: auto;
+    
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+/*removed height: 200px so image and text scale down to fit div container when the window is resized*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -163,14 +152,17 @@ p {
 
 .search-engine-optimization img {
     max-height: 200px;
+
 }
 
 .online-reputation-management img {
     max-height: 200px;
+
 }
 
 .social-media-marketing img {
     max-height: 200px;
+
 }
 
 .search-engine-optimization h2 {
